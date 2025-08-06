@@ -43,7 +43,7 @@ class OfertaCreditoService
                     $valorAPagar = $valor * pow(1 + $juros, $parcelas);
 
                     Oferta::create([
-                        'cpf'                   => $cpf,
+                    'cpf'                   => $cpf,
                         'instituicao_financeira' => $instituicao['nome'],
                         'modalidade_credito'     => $modalidade['nome'],
                         'valor_solicitado'       => $valor,
@@ -73,6 +73,6 @@ class OfertaCreditoService
         // Retorna até 3 ofertas
         return array_slice($ofertas, 0, 3);
     }
-    
-    
+
+
 }

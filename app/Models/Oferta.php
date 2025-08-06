@@ -14,7 +14,8 @@ class Oferta extends Model
         'qnt_parcelas',
         'taxa_juros',
         'valor_a_pagar',
-        'numero_oferta'
+        'numero_oferta',
+        'data_oferta'
     ];
 }
 
